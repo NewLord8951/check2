@@ -6,7 +6,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.enums import ParseMode
 
 from channel import channel_router
-from ptivate_chat import private_router
+from private_chat import private_router
 from group_chat import group_router
 
 
@@ -16,7 +16,7 @@ TOKEN = os.getenv("TOKEN")
 
 async def main():
     logger.add("file.log",
-               format="{time:YYYY-MM-DD at HH-mm-ss} | {level} | {message}",
+               format="{time:YYYY-MM-DD at HH:mm:ss} | {level} | {message}",
                rotation="3 days",
                backtrace=True,
                diagnose=True)
