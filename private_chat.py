@@ -13,4 +13,3 @@ def setup_private_handlers(dp: Dispatcher):
     async def private_echo(message: types.Message):
         await message.answer(f"Вы написали в ЛС: {message.text}")
         logger.info(f"ЛС: эхо для {message.from_user.id}")
-
